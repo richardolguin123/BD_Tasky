@@ -76,7 +76,6 @@
       const title = document.getElementById("title").value;
 
       try {
-        // Agregar la tarea a la colección "tasks"
         const docRef = await addDoc(collection(db, "tasks"), {
           assignedTo: assignedTo,
           createdAt: createdAt,
